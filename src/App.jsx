@@ -21,7 +21,7 @@ function App() {
       setInputValue(ip);
       
       // Fetching location information based on the IP address
-      const locationResponse = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_gQVWx1NcHIS8DBxsbO8Yqqj6Nd1vF&ipAddress=${ip}`);
+      const locationResponse = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=&{API_KEY}&ipAddress=${ip}`);
       const locationData = await locationResponse.json();
       setIpInfo(locationData);
       
