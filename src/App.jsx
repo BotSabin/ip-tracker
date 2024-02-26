@@ -36,9 +36,9 @@ function App() {
     }
   };
 
-  // useEffect(() => {
-  //   handleSubmit();
-  // }, []);
+  useEffect(() => {
+    handleSubmit();
+  }, []);
   
 
   useEffect(() => {
